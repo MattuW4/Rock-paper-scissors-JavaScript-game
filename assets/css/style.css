@@ -226,7 +226,7 @@ footer {
 
 .inner-modal-container {
     background-color: gray;
-    margin: 12rem 4rem;
+    margin: 12rem 4rem 12rem 3rem;
     padding: 14px;
     text-align: center;
 }
@@ -319,7 +319,7 @@ div>ul {
 
     .inner-modal-container {
         margin-left: 2rem;
-        margin-left: 2rem;
+        margin-right: 3rem;
     }
 }
 
