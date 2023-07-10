@@ -89,7 +89,7 @@ function scoreUpdate(playerWeapon, computerWeapon) {
             endGame();
         }
         if (computerScore == 5) {
-            arenaVictorOutput.textContent = "Game over! ";
+            arenaVictorOutput.textContent = "Computer wins :( ";
             endGame();
         }
     }
@@ -122,7 +122,7 @@ function refreshButton() {
     playerChoice.innerHTML = "Player choice:";
     playerScoreOutput.innerHTML = "Player score: 0";
     computerScoreOutput.innerHTML = "Computer score: 0";
-    arenaVictorOutput.innerHTML = "Winner:";
+    arenaVictorOutput.innerHTML = "Battle outcome:";
     roundOutput.innerHTML = "Round number: 0";
     refreshWeaponChoiceListener();
 }
