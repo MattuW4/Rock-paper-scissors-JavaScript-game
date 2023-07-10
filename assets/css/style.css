@@ -73,3 +73,32 @@ body {
     padding-left: 2rem;
     padding-top: 1rem;
 }
+
+/* Game section */
+.weapon-choice-instruction {
+    text-align: center;
+    padding-left: 20px;
+}
+
+.player-weapon-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 4rem;
+}
+
+.hands-image {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+}
+
+.player-weapon-choice-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-wrap: wrap;
+    transition: 0.5s;
+}
+
+/* Weapon section*/
