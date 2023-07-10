@@ -54,22 +54,22 @@ function scoreUpdate(playerWeapon, computerWeapon) {
             arenaVictorOutput.innerHTML = "Draw!";
             roundNumber += 1;
             roundOutput.innerHTML = `Round number: ${roundNumber}`;
-        } else if (
-            (playerWeapon === "rock" && computerWeapon === "scissors")) {
+        } else if
+            (playerWeapon === "rock" && computerWeapon === "scissors") {
             arenaVictorOutput.innerHTML = "Player wins!";
             playerScore += 1;
             roundNumber += 1;
             playerScoreOutput.innerHTML = `Player score: ${playerScore}`;
             roundOutput.innerHTML = `Round number: ${roundNumber}`;
-        } else if (
-            (playerWeapon === "paper" && computerWeapon === "rock")) {
+        } else if
+            (playerWeapon === "paper" && computerWeapon === "rock") {
             arenaVictorOutput.innerHTML = "Player wins!";
             playerScore += 1;
             roundNumber += 1;
             playerScoreOutput.innerHTML = `Player score: ${playerScore}`;
             roundOutput.innerHTML = `Round number: ${roundNumber}`;;
-        } else if (
-            (playerWeapon === "scissors" && computerWeapon === "paper")) {
+        } else if
+            (playerWeapon === "scissors" && computerWeapon === "paper") {
             arenaVictorOutput.innerHTML = "Player wins!";
             playerScore += 1;
             roundNumber += 1;
@@ -104,6 +104,7 @@ function refreshButton() {
     playerScoreOutput.innerHTML = "Player score: 0";
     computerScoreOutput.innerHTML = "Computer score: 0";
     arenaVictorOutput.innerHTML = "Winner:";
+    roundOutput.innerHTML = "Round number: 0";
 }
 
 // Modal for help button
