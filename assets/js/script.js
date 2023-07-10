@@ -63,7 +63,8 @@ function scoreUpdate(playerWeapon, computerWeapon) {
         }
     }
 }
-// Refresh button function
+
+const refreshGame = document.querySelector("#refreshButton");
 refreshGame.addEventListener("click", refreshButton);
 
 function refreshButton() {
@@ -74,6 +75,7 @@ function refreshButton() {
     computerScoreOutput.innerHTML = "Computer score: 0";
     arenaVictorOutput.innerHTML = "";
 }
+
 // Modal for help button
 
 //Variable declarations
