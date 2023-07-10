@@ -112,7 +112,7 @@ body {
     display: grid;
     justify-content: center;
     grid-template-columns: 23rem 18rem 25rem;
-    grid-template-rows: 3rem 4rem 2rem;
+    grid-template-rows: 3rem 2rem 2rem;
     align-items: baseline;
     margin-top: 3rem;
     padding-left: 5rem;
@@ -121,9 +121,6 @@ body {
     padding-bottom: 2rem;
     text-align: center;
 
-}
-#playerChoice {
-    border-bottom-style: dotted;
 }
 
 .player-choice-output {
@@ -146,21 +143,23 @@ body {
 /* Results section */
 
 .overall-results {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 23rem 18rem 25rem;
-    grid-template-rows: 3rem 4rem 2rem;
+    display: flex;
     justify-items: center;
     align-items: baseline;
-    margin-top: 3rem;
-    padding-left: 5rem;
+    margin-top: 5rem;
+    padding-left: 6rem;
     text-transform: uppercase;
-
     text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
+
+
 #playerScore {
     border-bottom-style: dotted;
 }
+
 .player-score {
     grid-row: 3/3;
 }
@@ -177,7 +176,7 @@ body {
 /* Footer */
 
 footer {
-    padding-top: 3.125rem;
+    padding-top: 4.125rem;
     text-align: center;
     width: 100%;
 
