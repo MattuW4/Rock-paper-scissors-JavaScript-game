@@ -83,12 +83,12 @@ function scoreUpdate(playerWeapon, computerWeapon) {
             roundOutput.innerHTML = `Round number: ${roundNumber}`;
         }
 
-        if (playerScore == 10) {
+        if (playerScore == 5) {
             arenaVictorOutput.textContent = "You're a WEINER! ";
 
             endGame();
         }
-        if (computerScore == 10) {
+        if (computerScore == 5) {
             arenaVictorOutput.textContent = "Game over! ";
             endGame();
         }

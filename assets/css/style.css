@@ -71,7 +71,7 @@ body {
 
 .game-title {
     padding-left: 2rem;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 /* Game section */
@@ -176,7 +176,7 @@ body {
 /* Footer */
 
 footer {
-    padding-top: 4.125rem;
+    padding-top: 8.125rem;
     text-align: center;
     width: 100%;
 
@@ -324,5 +324,11 @@ div>ul {
 
     footer {
         padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .game-options-container {
+        margin-left: 5rem;
     }
 }
