@@ -1,10 +1,12 @@
 // Declare global variables
 const choices = document.getElementsByClassName("player-weapon-choice-button");
 const playerChoice = document.getElementById("playerChoice");
+const computerChoice = document.getElementById("computerChoice");
 const computerChoiceOutput = document.getElementsByClassName("computer-choice-output");
 const arenaVictorOutput = document.getElementById("arenaVictorOutput");
 const playerScoreOutput = document.getElementById("playerScore");
 const computerScoreOutput = document.getElementById("computerScore");
+const roundOutput = document.getElementById("roundNumber");
 
 // Refresh button
 const refreshGame = document.getElementById("refreshButton");
@@ -41,41 +43,50 @@ function weaponChoice(event) {
     let playerWeapon = clickedCharacterButton.id;
     let computerWeapon = randomComputer();
     scoreUpdate(playerWeapon, computerWeapon);
-
 }
 
 // Function to display outcome and update scores
 function scoreUpdate(playerWeapon, computerWeapon) {
     if (playerWeapon) {
-        computerChoiceOutput.innerHTML = `Computer choice: ${computerWeapon}`;
-        playerScoreOutput.innerHTML = `Player choice: ${playerWeapon}`;
+        computerChoice.innerHTML = `Computer choice: ${computerWeapon}`;
+        playerChoice.innerHTML = `Player choice: ${playerWeapon}`;
         if (playerWeapon === computerWeapon) {
             arenaVictorOutput.innerHTML = "Draw!";
+            roundNumber += 1;
+            roundOutput.innerHTML = `Round number: ${roundNumber}`;
         } else if (
             (playerWeapon === "rock" && computerWeapon === "scissors")) {
             arenaVictorOutput.innerHTML = "Player wins!";
             playerScore += 1;
+            roundNumber += 1;
             playerScoreOutput.innerHTML = `Player score: ${playerScore}`;
+            roundOutput.innerHTML = `Round number: ${roundNumber}`;
         } else if (
             (playerWeapon === "paper" && computerWeapon === "rock")) {
             arenaVictorOutput.innerHTML = "Player wins!";
             playerScore += 1;
+            roundNumber += 1;
             playerScoreOutput.innerHTML = `Player score: ${playerScore}`;
+            roundOutput.innerHTML = `Round number: ${roundNumber}`;;
         } else if (
             (playerWeapon === "scissors" && computerWeapon === "paper")) {
             arenaVictorOutput.innerHTML = "Player wins!";
             playerScore += 1;
+            roundNumber += 1;
             playerScoreOutput.innerHTML = `Player score: ${playerScore}`;
+            roundOutput.innerHTML = `Round number: ${roundNumber}`;
         } else {
             arenaVictorOutput.innerHTML = "Computer wins!";
-            computerScore++;
+            computerScore += 1;
+            roundNumber += 1;
             computerScoreOutput.innerHTML = `Computer score: ${computerScore}`;
+            roundOutput.innerHTML = `Round number: ${roundNumber}`;
         }
 
-        if (playerScore === 5) {
+        if (playerScore > 5) {
             arenaVictorOutput.textContent = "Victory! You won the game.";
         }
-        if (computerScore === 5) {
+        if (computerScore > 5) {
             arenaVictorOutput.textContent = "Game over! You lost the game.";
         }
     }
@@ -88,9 +99,11 @@ function refreshButton() {
     playerScore = 0;
     computerScore = 0;
     roundNumber = 0;
+    computerChoice.innerHTML = "Computer choice:";
+    playerChoice.innerHTML = "Player choice:";
     playerScoreOutput.innerHTML = "Player score: 0";
     computerScoreOutput.innerHTML = "Computer score: 0";
-    arenaVictorOutput.innerHTML = "";
+    arenaVictorOutput.innerHTML = "Winner:";
 }
 
 // Modal for help button
