@@ -112,7 +112,6 @@ refreshGame.addEventListener("click", refreshButton);
 function refreshWeaponChoiceListener() {
     for (let choice of choices) {
         choice.addEventListener("click", weaponChoice);
-        arenaVictorOutput.style.fontSize = "100%";
     }
 }
 function refreshButton() {
