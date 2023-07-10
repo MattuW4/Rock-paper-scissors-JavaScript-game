@@ -6,10 +6,23 @@ const arenaVictorOutput = document.querySelector("#arenaVictorOutput");
 const playerScoreOutput = document.querySelector("#playerScore");
 const computerScoreOutput = document.querySelector("#computerScore");
 
+// Refresh button
+const refreshGame = document.querySelector("#refreshButton");
+
+//Modal
+const modal = document.getElementById("my-modal");
+const openModal = document.getElementById("open-modal-button");
+const closeModal = document.querySelector(".return-button");
+
+// Computer choices
 const weaponOptions = ["rock", "paper", "scissors"];
+
+// Scores
 let = playerScore = 0;
 let computerScore = 0;
 let roundNumber = 0;
+
+// Main game 
 
 // Event listener for player weapon choice
 choices.forEach((choice) => choice.addEventListener("click", weaponChoice));
@@ -64,7 +77,7 @@ function scoreUpdate(playerWeapon, computerWeapon) {
     }
 }
 
-const refreshGame = document.querySelector("#refreshButton");
+// Refresh button function
 refreshGame.addEventListener("click", refreshButton);
 
 function refreshButton() {
@@ -77,11 +90,6 @@ function refreshButton() {
 }
 
 // Modal for help button
-
-//Variable declarations
-const modal = document.getElementById("my-modal");
-const openModal = document.getElementById("open-modal-button");
-const closeModal = document.querySelector(".return-button");
 
 /**  Modal open and hide */
 openModal.addEventListener("click", showModal);
