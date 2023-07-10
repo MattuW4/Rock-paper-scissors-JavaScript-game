@@ -1,7 +1,75 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
+/* Structural CSS */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 /* Fonts */
+h1 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 2rem;
+    letter-spacing: 12px;
+}
+
 body {
     font-family: 'Press Start 2P', sans-serif;
     background-color: rgb(182, 182, 201);
+}
+
+/* Banner, option buttons and title*/
+.game-info-banner {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.game-options-container {
+    padding: 4rem;
+    margin-left: 2rem;
+}
+
+.help-menu-button {
+    margin: 0.625rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: white;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 41px;
+    cursor: pointer;
+}
+
+.game-refresh-button {
+    margin: 0.625rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: white;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 41px;
+    cursor: pointer;
+}
+
+.game-refresh-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.help-menu-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.game-title {
+    padding-left: 2rem;
+    padding-top: 1rem;
 }
