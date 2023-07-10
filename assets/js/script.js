@@ -52,14 +52,11 @@ function scoreUpdate(playerWeapon, computerWeapon) {
         playerChoice.innerHTML = `Player choice: ${playerWeapon}`;
         if (playerWeapon === computerWeapon) {
             arenaVictorOutput.innerHTML = "Draw!";
-            arenaVictorOutput.style.fontSize = "110%";
             roundNumber += 1;
             roundOutput.innerHTML = `Round number: ${roundNumber}`;
-            roundOutput.style.fontSize = "110%";
         } else if
             (playerWeapon === "rock" && computerWeapon === "scissors") {
             arenaVictorOutput.innerHTML = "Player wins!";
-            arenaVictorOutput.style.fontSize = "110%";
             playerScore += 1;
             roundNumber += 1;
             playerScoreOutput.innerHTML = `Player score: ${playerScore}`;
@@ -67,7 +64,6 @@ function scoreUpdate(playerWeapon, computerWeapon) {
         } else if
             (playerWeapon === "paper" && computerWeapon === "rock") {
             arenaVictorOutput.innerHTML = "Player wins!";
-            arenaVictorOutput.style.fontSize = "110%";
             playerScore += 1;
             roundNumber += 1;
             playerScoreOutput.innerHTML = `Player score: ${playerScore}`;
@@ -75,14 +71,12 @@ function scoreUpdate(playerWeapon, computerWeapon) {
         } else if
             (playerWeapon === "scissors" && computerWeapon === "paper") {
             arenaVictorOutput.innerHTML = "Player wins!";
-            arenaVictorOutput.style.fontSize = "110%";
             playerScore += 1;
             roundNumber += 1;
             playerScoreOutput.innerHTML = `Player score: ${playerScore}`;
             roundOutput.innerHTML = `Round number: ${roundNumber}`;
         } else {
             arenaVictorOutput.innerHTML = "Computer wins!";
-            arenaVictorOutput.style.fontSize = "110%";
             computerScore += 1;
             roundNumber += 1;
             computerScoreOutput.innerHTML = `Computer score: ${computerScore}`;
