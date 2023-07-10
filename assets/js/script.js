@@ -2,7 +2,6 @@
 const choices = document.getElementsByClassName("player-weapon-choice-button");
 const playerChoice = document.getElementById("playerChoice");
 const computerChoice = document.getElementById("computerChoice");
-const computerChoiceOutput = document.getElementsByClassName("computer-choice-output");
 const arenaVictorOutput = document.getElementById("arenaVictorOutput");
 const playerScoreOutput = document.getElementById("playerScore");
 const computerScoreOutput = document.getElementById("computerScore");
@@ -101,10 +100,8 @@ function endGame() {
         choice.removeEventListener("click", weaponChoice);
         arenaVictorOutput.style.fontSize = "200%";
         arenaVictorOutput.style.align = "center";
-
     }
 }
-
 
 // Refresh button function
 refreshGame.addEventListener("click", refreshButton);
@@ -113,6 +110,7 @@ function refreshWeaponChoiceListener() {
     for (let choice of choices) {
         choice.addEventListener("click", weaponChoice);
     }
+    arenaVictorOutput.style.fontSize = "100%";
 }
 function refreshButton() {
     playerScore = 0;
@@ -141,4 +139,4 @@ function showModal() {
 /** Hide modal function */
 function hideModal() {
     modal.style.display = "none";
-};
+}
