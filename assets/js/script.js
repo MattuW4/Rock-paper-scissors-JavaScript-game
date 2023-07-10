@@ -18,7 +18,7 @@ const closeModal = document.querySelector(".return-button");
 const weaponOptions = ["rock", "paper", "scissors"];
 
 // Scores
-let = playerScore = 0;
+let playerScore = 0;
 let computerScore = 0;
 let roundNumber = 0;
 
@@ -45,22 +45,23 @@ function weaponChoice() {
 function scoreUpdate(playerWeapon, computerWeapon) {
     if (playerWeapon) {
         computerChoiceOutput.innerHTML = `Computer choice: ${computerWeapon}`;
+        playerScoreOutput.innerHTML = `Player score: ${playerScore}`;
         if (playerWeapon === computerWeapon) {
             arenaVictorOutput.innerHTML = "Draw!";
         } else if (
             (playerWeapon === "rock" && computerWeapon === "scissors")) {
             arenaVictorOutput.innerHTML = "Player wins!";
-            playerScore++;
+            playerScore += 1;
             playerScoreOutput.innerHTML = `Player score: ${playerScore}`;
         } else if (
             (playerWeapon === "paper" && computerWeapon === "rock")) {
             arenaVictorOutput.innerHTML = "Player wins!";
-            playerScore++;
+            playerScore += 1;
             playerScoreOutput.innerHTML = `Player score: ${playerScore}`;
         } else if (
             (playerWeapon === "scissors" && computerWeapon === "paper")) {
             arenaVictorOutput.innerHTML = "Player wins!";
-            playerScore++;
+            playerScore += 1;
             playerScoreOutput.innerHTML = `Player score: ${playerScore}`;
         } else {
             arenaVictorOutput.innerHTML = "Computer wins!";
