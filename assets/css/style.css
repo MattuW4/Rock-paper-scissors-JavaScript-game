@@ -207,13 +207,11 @@ footer {
 
 #modal-hand-pun {
     font-style: italic;
-    font-weight: bold;
-    font-size: 1.5rem;
-
+    font-size: 1.3rem;
 }
 
 .rule-hands {
-    width: 50px;
+    width: 69px;
     border-radius: 50%;
 }
 
@@ -221,17 +219,15 @@ footer {
     position: absolute;
     top: 0;
     width: 100vw;
-    height: 87rem;
+
     background-color: rgba(0, 0, 0, 0.8);
     display: none;
 }
 
 .inner-modal-container {
     background-color: gray;
-    margin: 12rem auto;
+    margin: 12rem 4rem;
     padding: 14px;
-    border: 1px solic #888;
-    width: 80%;
     text-align: center;
 }
 
@@ -239,6 +235,7 @@ footer {
     border-radius: 5%;
     background-color: white;
     font-family: inherit;
+    font-size: 1.5rem;
     margin: 2rem;
     padding: 0.5rem;
     border: solid;
@@ -318,6 +315,11 @@ div>ul {
     .game-refresh-button {
 
         margin: 0.625rem;
+    }
+
+    .inner-modal-container {
+        margin-left: 2rem;
+        margin-left: 2rem;
     }
 }
 
