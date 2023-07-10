@@ -111,14 +111,19 @@ body {
 .arena-terminal {
     display: grid;
     justify-content: center;
-    grid-template-columns: 220px 220px 220px;
-    grid-template-rows: 50px 50px 50px;
-
+    grid-template-columns: 23rem 18rem 25rem;
+    grid-template-rows: 3rem 4rem 2rem;
     align-items: baseline;
     margin-top: 3rem;
     padding-left: 5rem;
     text-transform: uppercase;
+    justify-items: center;
+    padding-bottom: 2rem;
+    text-align: center;
 
+}
+#playerChoice {
+    border-bottom-style: dotted;
 }
 
 .player-choice-output {
@@ -133,6 +138,9 @@ body {
 .arena-victor-output {
     grid-column: 2/3;
     grid-row: 3/3;
+    border: inset;
+    padding: 1rem;
+    border-color: gold;
 }
 
 /* Results section */
@@ -140,15 +148,19 @@ body {
 .overall-results {
     display: grid;
     justify-content: center;
-    grid-template-columns: 220px 220px 220px;
-    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 23rem 18rem 25rem;
+    grid-template-rows: 3rem 4rem 2rem;
     justify-items: center;
     align-items: baseline;
     margin-top: 3rem;
     padding-left: 5rem;
     text-transform: uppercase;
-}
 
+    text-align: center;
+}
+#playerScore {
+    border-bottom-style: dotted;
+}
 .player-score {
     grid-row: 3/3;
 }
@@ -301,5 +313,17 @@ div>ul {
 
     .player-weapon-choice-button:hover {
         transform: scale(1.1);
+    }
+
+    .arena-terminal {
+        padding-left: 2rem;
+    }
+
+    .overall-results {
+        padding-left: 2rem;
+    }
+
+    footer {
+        padding-bottom: 1rem;
     }
 }
