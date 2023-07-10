@@ -25,7 +25,7 @@ function weaponChoice() {
     playerChoice.textContent = choices;
     let playerWeapon = this.id;
     let computerWeapon = randomComputer();
-    updateScore(playerWeapon, computerWeapon);
+    scoreUpdate(playerWeapon, computerWeapon);
 }
 
 // Function to display outcome and update scores
@@ -34,18 +34,18 @@ function scoreUpdate(playerWeapon, computerWeapon) {
         computerChoiceOutput.innerHTML = `Computer choice: ${computerWeapon}`;
         if (playerWeapon === computerWeapon) {
             arenaVictorOutput.innerHTML = "Draw!";
-        } else if {
-            (playerWeapon === "rock" && computerWeapon === "scissors") {
+        } else if (
+            (playerWeapon === "rock" && computerWeapon === "scissors")) {
             arenaVictorOutput.innerHTML = "Player wins!";
             playerScore++;
             playerScoreOutput.innerHTML = `Player score: ${playerScore}`;
-        } else if {
-            (playerWeapon === "paper" && computerWeapon === "rock") {
+        } else if (
+            (playerWeapon === "paper" && computerWeapon === "rock")) {
             arenaVictorOutput.innerHTML = "Player wins!";
             playerScore++;
             playerScoreOutput.innerHTML = `Player score: ${playerScore}`;
-        } else if {
-            (playerWeapon === "scissors" && computerWeapon === "paper") {
+        } else if (
+            (playerWeapon === "scissors" && computerWeapon === "paper")) {
             arenaVictorOutput.innerHTML = "Player wins!";
             playerScore++;
             playerScoreOutput.innerHTML = `Player score: ${playerScore}`;
@@ -54,10 +54,16 @@ function scoreUpdate(playerWeapon, computerWeapon) {
             computerScore++;
             computerScoreOutput.innerHTML = `Computer score: ${computerScore}`;
         }
-    }
-} 
+
+        if (playerScore === 5) {
+            arenaVictorOutput.textContent = "Victory! You won the game.";
+        }
+        if (computerScore === 5) {
+            arenaVictorOutput.textContent = "Game over! You lost the game.";
+        }
     }
 }
+
 
 
 
