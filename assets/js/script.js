@@ -83,18 +83,32 @@ function scoreUpdate(playerWeapon, computerWeapon) {
             roundOutput.innerHTML = `Round number: ${roundNumber}`;
         }
 
-        if (playerScore > 5) {
+        if (playerScore == 6) {
             arenaVictorOutput.textContent = "Victory! You won the game.";
+            endGame();
         }
-        if (computerScore > 5) {
+        if (computerScore == 6) {
             arenaVictorOutput.textContent = "Game over! You lost the game.";
+            endGame();
         }
+    }
+}
+
+// Function for end of game once score of 6 is reached
+function endGame() {
+    for (let choice of choices) {
+        choice.removeEventListener("click", weaponChoice);
     }
 }
 
 // Refresh button function
 refreshGame.addEventListener("click", refreshButton);
 
+function refreshWeaponChoiceListener() {
+    for (let choice of choices) {
+        choice.addEventListener("click", weaponChoice);
+    }
+}
 function refreshButton() {
     playerScore = 0;
     computerScore = 0;
@@ -105,6 +119,7 @@ function refreshButton() {
     computerScoreOutput.innerHTML = "Computer score: 0";
     arenaVictorOutput.innerHTML = "Winner:";
     roundOutput.innerHTML = "Round number: 0";
+    refreshWeaponChoiceListener();
 }
 
 // Modal for help button
