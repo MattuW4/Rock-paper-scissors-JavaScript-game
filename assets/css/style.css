@@ -243,7 +243,7 @@ footer {
 }
 
 #return-button:hover {
-    transform: (1.2);
+    transform: scale(1.2);
     background-color: black;
     color: white;
 }
@@ -302,7 +302,7 @@ div>ul {
     }
 }
 
-@media screen and (max-width: 650) {
+@media screen and (max-width: 650px) {
     .game-options-container {
         padding: 1rem 0rem 3rem 5rem;
     }
