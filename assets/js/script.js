@@ -84,22 +84,27 @@ function scoreUpdate(playerWeapon, computerWeapon) {
         }
 
         if (playerScore == 10) {
-            arenaVictorOutput.textContent = "Victory! You won the game.";
+            arenaVictorOutput.textContent = "You're a WEINER! ";
+
             endGame();
         }
         if (computerScore == 10) {
-            arenaVictorOutput.textContent = "Game over! You lost the game.";
+            arenaVictorOutput.textContent = "Game over! ";
             endGame();
         }
     }
 }
 
-// Function for end of game once score of 6 is reached
+// Function for end of game once score of 10 is reached
 function endGame() {
     for (let choice of choices) {
         choice.removeEventListener("click", weaponChoice);
+        arenaVictorOutput.style.fontSize = "200%";
+        arenaVictorOutput.style.align = "center";
+
     }
 }
+
 
 // Refresh button function
 refreshGame.addEventListener("click", refreshButton);
@@ -107,6 +112,7 @@ refreshGame.addEventListener("click", refreshButton);
 function refreshWeaponChoiceListener() {
     for (let choice of choices) {
         choice.addEventListener("click", weaponChoice);
+        arenaVictorOutput.style.fontSize = "100%";
     }
 }
 function refreshButton() {
@@ -136,4 +142,4 @@ function showModal() {
 /** Hide modal function */
 function hideModal() {
     modal.style.display = "none";
-}
+};
