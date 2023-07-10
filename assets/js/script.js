@@ -28,7 +28,7 @@ let roundNumber = 0;
 // Event listener for player weapon choice
 for (let choice of choices) {
     choice.addEventListener("click", weaponChoice);
-};
+}
 
 // Generate random computer weapon
 function randomComputer() {
@@ -66,7 +66,7 @@ function scoreUpdate(playerWeapon, computerWeapon) {
             playerScore += 1;
             roundNumber += 1;
             playerScoreOutput.innerHTML = `Player score: ${playerScore}`;
-            roundOutput.innerHTML = `Round number: ${roundNumber}`;;
+            roundOutput.innerHTML = `Round number: ${roundNumber}`;
         } else if
             (playerWeapon === "scissors" && computerWeapon === "paper") {
             arenaVictorOutput.innerHTML = "Player wins!";
