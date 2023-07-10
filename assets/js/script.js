@@ -1,7 +1,10 @@
 // Declare global variables
 const choices = document.querySelectorAll(".player-weapon-choice-button");
 const playerChoice = document.querySelector("#playerChoice");
-const computerChoiceOutput = document.querySelector(".computer-choice-output")
+const computerChoiceOutput = document.querySelector(".computer-choice-output");
+const arenaVictorOutput = document.querySelector("#arenaVictorOutput");
+const playerScoreOutput = document.querySelector("#playerScore");
+const computerScoreOutput = document.querySelector("#computerScore");
 
 const weaponOptions = ["rock", "paper", "scissors"];
 let = playerScore = 0;
@@ -27,8 +30,32 @@ function weaponChoice() {
 
 // Function to display outcome and update scores
 function scoreUpdate(playerWeapon, computerWeapon) {
-    if (playerWeapon){
-        computerChoiceOutput.innerHTML = `Computer choice: ${computerWeapon}` 
+    if (playerWeapon) {
+        computerChoiceOutput.innerHTML = `Computer choice: ${computerWeapon}`;
+        if (playerWeapon === computerWeapon) {
+            arenaVictorOutput.innerHTML = "Draw!";
+        } else if {
+            (playerWeapon === "rock" && computerWeapon === "scissors") {
+            arenaVictorOutput.innerHTML = "Player wins!";
+            playerScore++;
+            playerScoreOutput.innerHTML = `Player score: ${playerScore}`;
+        } else if {
+            (playerWeapon === "paper" && computerWeapon === "rock") {
+            arenaVictorOutput.innerHTML = "Player wins!";
+            playerScore++;
+            playerScoreOutput.innerHTML = `Player score: ${playerScore}`;
+        } else if {
+            (playerWeapon === "scissors" && computerWeapon === "paper") {
+            arenaVictorOutput.innerHTML = "Player wins!";
+            playerScore++;
+            playerScoreOutput.innerHTML = `Player score: ${playerScore}`;
+        } else {
+            arenaVictorOutput.innerHTML = "Computer wins!";
+            computerScore++;
+            computerScoreOutput.innerHTML = `Computer score: ${computerScore}`;
+        }
+    }
+} 
     }
 }
 
