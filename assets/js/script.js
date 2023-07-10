@@ -1,18 +1,18 @@
 // Declare global variables
-const choices = document.querySelectorAll(".player-weapon-choice-button");
-const playerChoice = document.querySelector("#playerChoice");
-const computerChoiceOutput = document.querySelector(".computer-choice-output");
-const arenaVictorOutput = document.querySelector("#arenaVictorOutput");
-const playerScoreOutput = document.querySelector("#playerScore");
-const computerScoreOutput = document.querySelector("#computerScore");
+const choices = document.getElementsByClassName("player-weapon-choice-button");
+const playerChoice = document.getElementById("playerChoice");
+const computerChoiceOutput = document.getElementsByClassName("computer-choice-output");
+const arenaVictorOutput = document.getElementById("arenaVictorOutput");
+const playerScoreOutput = document.getElementById("playerScore");
+const computerScoreOutput = document.getElementById("computerScore");
 
 // Refresh button
-const refreshGame = document.querySelector("#refreshButton");
+const refreshGame = document.getElementById("refreshButton");
 
 //Modal
 const modal = document.getElementById("my-modal");
 const openModal = document.getElementById("open-modal-button");
-const closeModal = document.querySelector(".return-button");
+const closeModal = document.querySelector("#return-button");
 
 // Computer choices
 const weaponOptions = ["rock", "paper", "scissors"];
@@ -25,7 +25,9 @@ let roundNumber = 0;
 // Main game 
 
 // Event listener for player weapon choice
-choices.forEach((choice) => choice.addEventListener("click", weaponChoice));
+for (let choice of choices) {
+    choice.addEventListener("click", weaponChoice);
+};
 
 // Generate random computer weapon
 function randomComputer() {
@@ -34,18 +36,19 @@ function randomComputer() {
 }
 
 // Function for player weapon choice
-function weaponChoice() {
-    playerChoice.textContent = choices;
-    let playerWeapon = this.id;
+function weaponChoice(event) {
+    let clickedCharacterButton = event.currentTarget;
+    let playerWeapon = clickedCharacterButton.id;
     let computerWeapon = randomComputer();
     scoreUpdate(playerWeapon, computerWeapon);
+
 }
 
 // Function to display outcome and update scores
 function scoreUpdate(playerWeapon, computerWeapon) {
     if (playerWeapon) {
         computerChoiceOutput.innerHTML = `Computer choice: ${computerWeapon}`;
-        playerScoreOutput.innerHTML = `Player score: ${playerScore}`;
+        playerScoreOutput.innerHTML = `Player choice: ${playerWeapon}`;
         if (playerWeapon === computerWeapon) {
             arenaVictorOutput.innerHTML = "Draw!";
         } else if (
@@ -83,7 +86,7 @@ refreshGame.addEventListener("click", refreshButton);
 
 function refreshButton() {
     playerScore = 0;
-    computerSCore = 0;
+    computerScore = 0;
     roundNumber = 0;
     playerScoreOutput.innerHTML = "Player score: 0";
     computerScoreOutput.innerHTML = "Computer score: 0";

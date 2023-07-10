@@ -33,8 +33,8 @@
             <br>
         </h1>
         <div class="game-options-container">
-            <button aria-label="Refresh button" class="game-refresh-button"><i
-                    class="fa-solid fa-arrows-rotate" id="refreshButton"></i></button>
+            <button aria-label="Refresh button" class="game-refresh-button"><i class="fa-solid fa-arrows-rotate"
+                    id="refreshButton"></i></button>
             <button id="open-modal-button" aria-label="Help menu button" class="help-menu-button"><i
                     class="fa-regular fa-circle-question"></i></button>
         </div>
@@ -45,14 +45,12 @@
         <div class="game-outer-container">
             <h2 class="weapon-choice-instruction">Choose your weapon!</h2>
             <div class="player-weapon-container">
-                <button aria-label="Rock" class="player-weapon-choice-button" data-choice="rock"><img
-                        class="hands-image" src="assets/images/Rock.png" alt="Image of hand in shape of rock"></button>
-                <button aria-label="Paper" class="player-weapon-choice-button" data-choice="paper"><img
-                        class="hands-image" src="assets/images/Paper.png"
-                        alt="Image of hand in shape of paper"></button>
-                <button aria-label="Scissors" class="player-weapon-choice-button" data-choice="scissors"><img
-                        class="hands-image" src="assets/images/Scissors.png"
-                        alt="Image of hand in shape of scissors"></button>
+                <button aria-label="Rock" class="player-weapon-choice-button" id="rock"><img class="hands-image"
+                        src="assets/images/Rock.png" alt="Image of hand in shape of rock"></button>
+                <button aria-label="Paper" class="player-weapon-choice-button" id="paper"><img class="hands-image"
+                        src="assets/images/Paper.png" alt="Image of hand in shape of paper"></button>
+                <button aria-label="Scissors" class="player-weapon-choice-button" id="scissors"><img class="hands-image"
+                        src="assets/images/Scissors.png" alt="Image of hand in shape of scissors"></button>
             </div>
         </div>
         <div class="arena-terminal">
@@ -106,7 +104,7 @@
                             class="rule-hands" src="assets/images/Paper.png" alt="Image of hand in shape of paper"></li>
                 </ul>
                 <div class="modal-button-container">
-                    <button class="return-button" aria-label="Return to arena button">Return to arena</button>
+                    <button id="return-button" aria-label="Return to arena button">Return to arena</button>
                 </div>
 
             </div>
