@@ -160,3 +160,23 @@ body {
 .round-number {
     grid-column: 2/2;
 }
+
+/* Footer */
+
+footer {
+    padding-top: 3.125rem;
+    text-align: center;
+    width: 100%;
+
+}
+
+.footer-media-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-media-link:hover {
+    border-bottom: 5px black solid;
+    color: white;
+}
