@@ -276,3 +276,19 @@ div>ul {
         height: 110px;
     }
 }
+
+@media screen and (max-width: 650) {
+    .game-options-container {
+        padding: 1rem 0rem 3rem 5rem;
+    }
+
+    .help-menu-button {
+
+        margin: 0.625rem;
+    }
+
+    .game-refresh-button {
+
+        margin: 0.625rem;
+    }
+}
