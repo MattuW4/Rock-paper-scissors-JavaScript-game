@@ -75,6 +75,8 @@ body {
 }
 
 /* Game section */
+
+/* Weapon section*/
 .weapon-choice-instruction {
     text-align: center;
     padding-left: 20px;
@@ -101,4 +103,6 @@ body {
     transition: 0.5s;
 }
 
-/* Weapon section*/
+.player-weapon-choice-button:hover {
+    transform: scale(1.3);
+}
