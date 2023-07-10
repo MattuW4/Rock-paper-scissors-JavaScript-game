@@ -292,3 +292,13 @@ div>ul {
         margin: 0.625rem;
     }
 }
+
+@media screen and (max-width: 590px) {
+    .game-info-banner {
+        flex-wrap: wrap;
+    }
+
+    .player-weapon-choice-button:hover {
+        transform: scale(1.1);
+    }
+}
