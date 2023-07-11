@@ -121,11 +121,11 @@ These defined the basic concept that initially did start out with "lizard" and "
 
 ![Wireframe games](documentation/wf2-turns-and-scoring.png)
 
-### Game ove outcome
+### Game over outcome
 
 ![Wireframe outcome](documentation/wf3-output-end-game.png)
 
-## Technology employed
+## Technologies employed
 
 ### Development languages
 
@@ -146,19 +146,19 @@ These defined the basic concept that initially did start out with "lizard" and "
 
 ## Validation
 
-- The site has been tested in [HTML Validator](https://validator.w3.org/). The HTML is valid at the time of writing as demonstrated below:
+- The site has been validated in [HTML Validator](https://validator.w3.org/). The HTML is valid at the time of writing as demonstrated below:
 
 ![HTML Validator](documentation/html-W3.png)
 
 There were only a couple of errors that were corrected before launch, namely removal of a redundant button id.
 
-- The site has been tested in [CSS Validator](https://jigsaw.w3.org/css-validator/). The CSS is valid at the time of writing as demonstrated below:
+- The site has been validated in [CSS Validator](https://jigsaw.w3.org/css-validator/). The CSS is valid at the time of writing as demonstrated below:
 
 ![CSS Validator](documentation/css-W3C.png)
 
 There were a number of errors relating to syntax issues that were fixed by the developer before deployment, namely correcting a missing pixel value on a responsivity rule and correcting missing tansform function.
 
-- The site has been tested in [JS Hint](https://jshint.com/). The JS is valid at the time of writing as demonstrated below:
+- The site has been validated in [JS Hint](https://jshint.com/). The JS is valid at the time of writing as demonstrated below:
 
 ![JS Hint](documentation/js-hint-output.png)
 
