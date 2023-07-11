@@ -201,6 +201,8 @@ The following details the tests that were set out and completed for the site:
 
 ![Website and game testing](documentation/scenario-testing.png)
 
+### 404 Page
+
 The 404 page was tested using with no issues identified although the developer was unable to view the 404 page before deployment [404 Checker](https://websiteadvantage.com.au/404-Error-Handler-Checker)
 
 ![404 test](documentation/404-test.png)
