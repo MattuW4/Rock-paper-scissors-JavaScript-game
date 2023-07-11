@@ -252,6 +252,17 @@ div>ul {
     list-style-type: none;
 }
 
+/* */
+.error-page-container {
+    background-color: inherit;
+    color: black;
+    margin: 0 auto;
+    position: relative;
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 1075px) {
