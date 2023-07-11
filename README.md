@@ -4,7 +4,7 @@
 
 ## Project overview
 
-This is a web game engineered using HTML, CSS and JavScropt for a player to challenge the computer. The primary focus is to be able to easily and conveniently play a classic game of rock, paper, scissors. The target users for the game are people interested in playing online and real-world games. A prime focus of the user experience (UX) is to be able to immediately play the game but also to find information out about the game and refresh to play again. The site is designed to be simple, yet engaging for UX in order that visitors can access relevant information and experience. The content is minimalistic but balanced, focused and contextualised in a stylised world that the user would be able to understand and identify with. Rock, paper, scissors is a intransitive hand game typically played between two people where each player forms a corresponding shape with their hand, attempting to beat the other random outcome. The game itself has been in existence for thousands of year but now you can play it online via this platform!
+This is a web game engineered using HTML, CSS and JavScript for a player to challenge the computer. The primary focus is to be able to easily and conveniently play a classic game of rock, paper, scissors. The target users for the game are people interested in playing online and real-world games. A prime focus of the user experience (UX) is to be able to immediately play the game but also to find information out about the game and refresh to play again. The site is designed to be simple, yet engaging for UX in order that visitors can access relevant information and experience. The content is minimalistic but balanced, focused and contextualised in a stylised world that the user would be able to understand and identify with. Rock, paper, scissors is a intransitive hand game typically played between two people where each player forms a corresponding shape with their hand, attempting to beat the other random outcome. The game itself has been in existence for thousands of year but now you can play it online via this platform!
 
 ![Mockup](documentation/responsive.png)
 
@@ -51,7 +51,7 @@ The weapon choice section lays out 3 buttons for the player to choose an option 
 
 - F04 Arena and result sections
 
-The arena section is set out to clearly show the player and computer choice once selecte for each round. The outcome is highlighted by an inset border box that draws the users attention. As each round progresses the choices made are updated, as is the outcome when the player and computer choices are compared in JavaScript.
+The arena section is set out to clearly show the player and computer choice once selected for each round. The outcome is highlighted by an inset border box that draws the users' attention. As each round progresses the choices made are updated, as is the outcome when the player and computer choices are compared in JavaScript.
 
 The result section is similarly set out with outputs that update the player and computer score. The rounds are also updated so that the player can track how many turns have been taken in their battle against the computer. The player score is underlined for better UX experience as it allows the player to always be able to immediately orientate to their score in the battle. The layouts are intended to provide the information in a accessible way that does not distract or disorientate the player.
 
@@ -81,7 +81,7 @@ These screens show when the player has won a hand, the computer has won a hand, 
 
 - F10, F11 Player and computer game over screens
 
-These screens show the end game result once a score of 5 has been reached by either the player or computer. The outcome message is updated with a larger text size to either read "You are a weiner" (intentional, playful joke to give the user some interaction and consider, "have they really won or do they want to play the computer again as it is mocking them") or "computer wins : (", again providing a playful interaction for the user so that they are encouraged to subconsciously play again without being deterred due to a harsh output if the computer won. The game ends at these output screens and JavaScript is used to remove the evnt listeners on the player weapon buttons so that no more choices can be made. The refresh button then allwos the user to easily reset the game if they wish to play again, clearing all the outputs and reinstating the player choice functionality.
+These screens show the end game result once a score of 5 has been reached by either the player or computer. The outcome message is updated with a larger text size to either read "You are a weiner" (intentional - not a spelling mistake, playful joke to give the user some interaction and consider, "have they really won or do they want to play the computer again as it is mocking them") or "computer wins : (", again providing a playful interaction for the user so that they are encouraged to subconsciously play again without being deterred due to a harsh output if the computer won. The game ends at these output screens and JavaScript is used to remove the event listeners on the player weapon buttons so that no more choices can be made. The refresh button then allows the user to easily reset the game if they wish to play again, clearing all the outputs and reinstating the player choice functionality.
 
 ![Player game over](documentation/f10-player-game-over.png)
 
@@ -96,7 +96,7 @@ The site has been designed to work through the anticipated ranking of need and d
 - More interaction for the user with the output sections appearing as pop ups that brings a bit more depth to the site;
 - Styling of the score outputs to highlight that they are being incremented;
 - An element that decreases the player score when the computer scores to increase the challenge, maybe as an option that more advanced users can select;
-- Addition of "lizard" and "spock" hands to create more variation in the game play through choice;
+- Addition of "lizard" and "Spock" hands to create more variation in the game play through choice;
 - Add 8 bit background music that plays to increase excitement and suspense, this being responsive to player or computer choices.
 
 ## Design
@@ -111,7 +111,7 @@ Consistent colour choices were made to make the site and game more accessible vi
 
 ## Wireframe sketches
 
-These defined the basic concept that initially did start out with "lizard" and "spock" hands included but as the game was developed the scope was refined. Images used were just place holders at the time of scoping and the layout was further refined with development and testing.
+These defined the basic concept that initially did start out with "lizard" and "Spock" hands included but as the game was developed the scope was refined. Images used were just place holders at the time of scoping and the layout was further refined with development and testing.
 
 ### Landing page
 
@@ -156,7 +156,7 @@ There were only a couple of errors that were corrected before launch, namely rem
 
 ![CSS Validator](documentation/css-W3C.png)
 
-There were a number of errors relating to syntax issues that were fixed by the developer before deployment, namely correcting a missing pixel value on a responsivity rule and correcting missing tansform function.
+There were a number of errors relating to syntax issues that were fixed by the developer before deployment, namely correcting a missing pixel value on a responsivity rule and correcting missing transform function.
 
 - The site has been validated in [JS Hint](https://jshint.com/). The JS is valid at the time of writing as demonstrated below:
 
