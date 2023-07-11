@@ -168,18 +168,6 @@ JS Hint had to be configured to ES6 which removed a series of warnings related t
 
 [Google's web.dev page quality test](https://web.dev/measure/) was used to measure the website against performance, accessibility, SEO and best practice.
 
-### Performance
-
-![performance-lighthouse](documentation/performance-lighthouse.png)
-
-As the performance score is lower than desired the following steps are some of the approaches that could be considered to address this in the future:
-
-- reduce weight of pages;
-- increase speed of servers;
-- or better render blocking resources.
-
-### Accessibility
-
 ![lighthouse-performance](documentation/performance.png)
 
 - The read out shows good results apart from in best practice. The issues could not be resolved by the developer prior to launch due to imagery origin formatting but will be revisited post deployment.
