@@ -287,3 +287,5 @@ Within the code files there are comments to indicate where the below resources w
 ## Acknowledgements
 
 Thanks to my mentor Brian Macharia who provided essential, indispensible reassurance and input with the project development and implementation.
+
+This game was engineerd as my second project with [Code Institute](https://codeinstitute.net/).
