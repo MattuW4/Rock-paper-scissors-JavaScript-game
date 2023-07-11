@@ -121,9 +121,9 @@ These defined the basic concept that initially did start out with "lizard" and "
 
 ![Wireframe games](documentation/wf2-turns-and-scoring.png)
 
-### Game over view
+### Game ove outcome
 
-![Wireframe booking](documentation/booking-wf3-output-end-game.png)
+![Wireframe outcome](documentation/wf3-output-end-game.png)
 
 ## Technology employed
 
@@ -207,9 +207,11 @@ The site has been developed to be responsive at:
 
 The following details the tests that were set out and completed for the site:
 
-![CSS Validator](documentation/website-test.png)
+![Website and game testing](documentation/website-test.png)
 
-The 404 page was tested using [404 Checker](https://websiteadvantage.com.au/404-Error-Handler-Checker)
+The 404 page was tested using with no issues identified although the developer was unable to view the 404 page before deployment [404 Checker](https://websiteadvantage.com.au/404-Error-Handler-Checker)
+
+![404 test](documentation/404-test.png)
 
 # Known bugs
 
@@ -261,14 +263,16 @@ The 404 page was tested using [404 Checker](https://websiteadvantage.com.au/404-
 
 ### Content
 
-- All content was written by the developer for this site.
+- All content was written by the developer for this site. Styling and layout are the users own work.
 
 ### Code
 
 Within the code files there are comments to indicate where the below resources were used as a basis to inform the code that was ultimately produced to style the site.
 
 - Code on how to use flex box and implement for ordering purposes was informed by resources from [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
-- Tutorials on how to develop a rock, paper, scissors were referred to and are available at [Web Dev Simplified](https://www.youtube.com/watch?v=1yS-JV4fWqY), [Geek for geeks](https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/) and [Code with Faraz](https://www.codewithfaraz.com/content/107/create-rock-paper-scissors-game-with-html-css-and-javascript)
+- Tutorials on how to develop a rock, paper, scissors were referred to and are available at [Web Dev Simplified](https://www.youtube.com/watch?v=1yS-JV4fWqY), [Geek for geeks](https://www.geeksforgeeks.org/rock-paper-and-scissor-game-using-javascript/), [Mozilla Development Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [Code with Faraz](https://www.codewithfaraz.com/content/107/create-rock-paper-scissors-game-with-html-css-and-javascript)
+- A tutorial on how to create a modal was used to develop the modal page [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp)
+- The Love Maths project from the Code Institute was also used to inform development of the JavaScript
 
 ### Media
 
@@ -278,4 +282,4 @@ Within the code files there are comments to indicate where the below resources w
 
 ## Acknowledgements
 
-Thanks to my mentor Brian Macharia who provided insightful feedback, reassurance and input with the project development and implementation.
+Thanks to my mentor Brian Macharia who provided essential, indispensible reassurance and input with the project development and implementation.

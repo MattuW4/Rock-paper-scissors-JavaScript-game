@@ -1,4 +1,4 @@
-// Declare global variables
+// Declare global variables - elements informed by tutorials and sources referred to in READ.ME
 const choices = document.getElementsByClassName("player-weapon-choice-button");
 const playerChoice = document.getElementById("playerChoice");
 const computerChoice = document.getElementById("computerChoice");
@@ -10,7 +10,7 @@ const roundOutput = document.getElementById("roundNumber");
 // Refresh button
 const refreshGame = document.getElementById("refreshButton");
 
-//Modal
+// Modal
 const modal = document.getElementById("my-modal");
 const openModal = document.getElementById("open-modal-button");
 const closeModal = document.querySelector("#return-button");
@@ -44,7 +44,7 @@ function weaponChoice(event) {
     scoreUpdate(playerWeapon, computerWeapon);
 }
 
-// Function to display outcome and update scores
+// Function to display outcome and update scores - informed by Code with Faraz
 function scoreUpdate(playerWeapon, computerWeapon) {
     if (playerWeapon) {
         computerChoice.innerHTML = `Computer choice: ${computerWeapon}`;
@@ -125,7 +125,7 @@ function refreshButton() {
     refreshWeaponChoiceListener();
 }
 
-// Modal for help button
+// Modal for help button - informed by W3Schools
 
 /**  Modal open and hide */
 openModal.addEventListener("click", showModal);
