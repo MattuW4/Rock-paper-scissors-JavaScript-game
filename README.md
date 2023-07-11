@@ -141,6 +141,10 @@ These defined the basic concept that initially did start out with "lizard" and "
 - [Code Anywhere](https://codeanywhere.com/): this was used for version control via the terminal to commit to Code Anywhere and Push to GitHub as the repository.
 - [GitHub](https://github.com/): this was used as a repository for projects that were committed from Code Anywhere.
 - [Tiny PNG](https://tinypng.com/): this was used to compress files for inclusion.
+- [Am I responsive](https://ui.dev/amiresponsive): used to test responsivity of site.
+- [Figma](https://www.figma.com/): used to create wireframes at scoping stage.
+
+## Validation
 
 - The site has been tested in [HTML Validator](https://validator.w3.org/). The HTML is valid at the time of writing as demonstrated below:
 
@@ -231,7 +235,7 @@ The 404 page was tested using with no issues identified although the developer w
 
 ### Cloning the repository
 
-- Navigate to the repository <https://github.com/MattuW4/Gather-Round-Board-Game-Cafe> on GitHub;
+- Navigate to the repository <https://mattuw4.github.io/Rock-paper-scissors-JavaScript-game/> on GitHub;
 - Above the list of files, click Code;
 - Copy the URL for the repository by selecting HTTPs;
 - Open Git Bash;
